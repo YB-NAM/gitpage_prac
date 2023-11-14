@@ -1,81 +1,129 @@
 /**
  * v0 by Vercel.
- * @see https://v0.dev/t/q78qlbK
+ * @see https://v0.dev/t/UuMpgZiIp8H
  */
-import { AccordionTrigger, AccordionContent, AccordionItem, Accordion } from "@/components/ui/accordion"
-import { CardContent, Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
 export default function Component() {
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <Card className="shadow-lg w-[550px]">
-        <CardContent className="p-6">
-          <h2 className="text-2xl font-semibold">Hi, I am Yoobin Nam</h2>
-          <Accordion className="w-full mt-4" type="multiple">
-            <AccordionItem value="item-1">
-              <AccordionTrigger className="hover:underline-none">
-                1. Skills
-              </AccordionTrigger>
-              <AccordionContent>
-                Language - C++, C, C#, Python, Java, Javascript, Typescript, html, CSS<br></br><br></br>
-                Framework - Angular, Nextjs<br></br><br></br>
-                Library - Jquery, React<br></br><br></br>
-                Operating Systems - Microsoft Window, Linux, Mac<br></br><br></br>
-                Application - Unity, Git & GitHub, VirtualBox, Docker, Microsoft Office<br></br><br></br>
-                Database - Postgresql, MySQL, MongoDB, Microsoft Sql
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger className="hover:underline-none">
-                2. Education
-              </AccordionTrigger>
-              <AccordionContent>
-                Simon Fraser University (2022. Spring ~ Present)<br></br>
-                BSc. Computer Science – Software System<br></br><br></br>
-
-                Douglas College (2020. Fall~ 2021. Fall)<br></br>
-                Computer Science<br></br><br></br>
-
-
-                Soongsing University in Korea (2016. Spring ~ 2018. Fall)<br></br>
-                Material Engineering
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger className="hover:underline-none">
-                3.
-              </AccordionTrigger>
-              <AccordionContent>
-                ...
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-4">
-              <AccordionTrigger className="hover:underline-none">
-                4
-              </AccordionTrigger>
-              <AccordionContent>
-                ...
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem className="border-b-0" value="item-5">
-              <AccordionTrigger className="hover:underline-none">
-                5. Contact Info.
-              </AccordionTrigger>
-              <AccordionContent>
-                School email: yoobin_nam@sfu.ca<br></br>
-                Personal email: ybca6244@gmail.com
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+    <div key="1" className="w-full min-h-screen bg-gray-100 dark:bg-gray-900">
+      <section
+        className="w-full h-screen flex flex-col items-center justify-center bg-cover"
+        style={{
+          backgroundImage: "linear-gradient(to right, #6a3093, #a044ff), url(/placeholder.svg?height=1080&width=1920)",
+        }}
+      >
+        <h1 className="text-5xl font-bold text-white dark:text-gray-200">Welcome to Yoobin's Portfolio</h1>
+        <h2 className="text-2xl text-white mt-4 dark:text-gray-300">My work and projects</h2>
+        <div className="flex mt-8 space-x-4">
+          <Button
+            className="text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+            variant="default"
+          >
+            <a href="#tag1">View Projects</a>
+          </Button>
           <Button
             className="text-blue-500 border-blue-500 hover:bg-blue-500 hover:text-white dark:text-gray-300 dark:border-gray-300 dark:hover:bg-gray-300 dark:hover:text-black"
             variant="outline"
           >
-            <a href="/">Home</a>
+            <a href="/test">About Me</a>
           </Button>
-        </CardContent>
-      </Card>
+        </div>
+      </section>
+      <section className="w-full py-12 px-8 space-y-12" id="tag1">
+        <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-200">Projects</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img
+              alt="Project 1"
+              height="200"
+              src="/placeholder.svg"
+              style={{
+                aspectRatio: "200/200",
+                objectFit: "cover",
+              }}
+              width="200"
+            />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Full-stack webpage</h4>
+              <p className="text-gray-600 mt-2 dark:text-gray-400">Using Angular with Typescript, Apache server, Postgresql</p>
+              <Button
+                className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                variant="default"
+              >
+                <a href="/sample1">Go to Project details</a>
+              </Button>
+            </div>
+          </div>
+          <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img
+              alt="Project 2"
+              height="200"
+              src="/placeholder.svg"
+              style={{
+                aspectRatio: "200/200",
+                objectFit: "cover",
+              }}
+              width="200"
+            />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">WebGL (computer graphic)</h4>
+              <p className="text-gray-600 mt-2 dark:text-gray-400">Using Javascript, CSS, HTML with WebGL. Create 2d-pacman, dynamic 3d-objects</p>
+              <Button
+                className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                variant="default"
+              >
+                <a href="/sample2">Go to Project details</a>
+              </Button>
+            </div>
+          </div>
+          <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img
+              alt="Project 3"
+              height="200"
+              src="/placeholder.svg"
+              style={{
+                aspectRatio: "200/200",
+                objectFit: "cover",
+              }}
+              width="200"
+            />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Unity 2d-games</h4>
+              <p className="text-gray-600 mt-2 dark:text-gray-400">Using Unity with C#, made real world products.</p>
+              <Button
+                className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                variant="default"
+              >
+                Go to Project details
+              </Button>
+            </div>
+          </div>
+          <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img
+              alt="Project 4"
+              height="200"
+              src="/placeholder.svg"
+              style={{
+                aspectRatio: "200/200",
+                objectFit: "cover",
+              }}
+              width="200"
+            />
+            <div className="p-4">
+              <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Problem solving</h4>
+              <p className="text-gray-600 mt-2 dark:text-gray-400">Using C, solve the tasks.</p>
+              <Button
+                className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                variant="default"
+              >
+                Go to Project details
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
+
