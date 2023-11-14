@@ -21,7 +21,12 @@ export default function Component() {
             details.
           </p>
         </div>
+        
       </div>
+      <a href="/"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
+            Home
+      </Button></a>
+
       <section className="w-full py-12 px-8 space-y-12" id="tag1">
         <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-200">Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -87,7 +92,7 @@ export default function Component() {
                 className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
-                Go to Project details
+                <a href="/sample3">Go to Project details</a>
               </Button>
             </div>
           </div>

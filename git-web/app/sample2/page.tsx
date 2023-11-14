@@ -27,12 +27,12 @@ export default function Component() {
         <h2 className="text-2xl font-bold hover:text-gray-700 transition-all duration-200">Proejct name</h2>
         <h3 className="text-gray-500 hover:text-gray-600 transition-all duration-200">Tech</h3>
         <p className="mt-2 text-gray-600 hover:text-gray-700 transition-all duration-200">
-          Details.
+          Detailsss.
         </p>
         <div className="flex mt-4 space-x-2">
-          <Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
-            <a href="/">Home</a>
-          </Button>
+        <a href="/"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
+          Home
+          </Button></a>
         </div>
       </CardContent>
     </Card>
@@ -101,7 +101,7 @@ export default function Component() {
             className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
             variant="default"
           >
-            Go to Project details
+            <a href="/sample3">Go to Project details</a>
           </Button>
         </div>
       </div>

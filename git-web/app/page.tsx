@@ -14,7 +14,7 @@ export default function Component() {
         }}
       >
         <h1 className="text-5xl font-bold text-white dark:text-gray-200">Welcome to Yoobin's Portfolio</h1>
-        <h2 className="text-2xl text-white mt-4 dark:text-gray-300">My work and projects</h2>
+        <h2 className="text-2xl text-white mt-4 dark:text-gray-300">My projects</h2>
         <div className="flex mt-8 space-x-4">
           <Button
             className="text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
@@ -95,7 +95,7 @@ export default function Component() {
                 className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
-                Go to Project details
+                <a href="/sample3">Go to Project details</a>
               </Button>
             </div>
           </div>
