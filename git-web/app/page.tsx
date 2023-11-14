@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button"
 
 export default function Component() {
   return (
-    <div className="w-full min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div key="1" className="w-full min-h-screen bg-gray-100 dark:bg-gray-900">
       <section
         className="w-full h-screen flex flex-col items-center justify-center bg-cover"
         style={{
-          backgroundImage: "url(/placeholder.svg?height=1080&width=1920)",
+          backgroundImage: "linear-gradient(to right, #6a3093, #a044ff), url(/placeholder.svg?height=1080&width=1920)",
         }}
       >
         <h1 className="text-5xl font-bold text-white dark:text-gray-200">Welcome to Yoobin's Portfolio</h1>
@@ -31,7 +31,7 @@ export default function Component() {
         </div>
       </section>
       <section className="w-full py-12 px-8 space-y-12" id="tag1">
-        <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-200">Featured Projects</h3>
+        <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-200">Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
             <img
@@ -51,7 +51,7 @@ export default function Component() {
                 className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
-                Go to Project details
+                <a href="/sample1">Go to Project details</a>
               </Button>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function Component() {
                 className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
-                Go to Project details
+                <a href="/sample2">Go to Project details</a>
               </Button>
             </div>
           </div>
