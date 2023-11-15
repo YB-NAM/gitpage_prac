@@ -26,7 +26,7 @@ export default function Component() {
             className="text-blue-500 border-blue-500 hover:bg-blue-500 hover:text-white dark:text-gray-300 dark:border-gray-300 dark:hover:bg-gray-300 dark:hover:text-black"
             variant="outline"
           >
-            <a href="/test">About Me</a>
+            <a href="/about">About Me</a>
           </Button>
         </div>
       </section>

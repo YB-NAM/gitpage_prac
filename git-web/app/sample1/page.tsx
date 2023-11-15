@@ -3,17 +3,18 @@ import { Button } from "@/components/ui/button"
 
 export default function Component() {
   return (
-    <div className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container flex items-start gap-8 px-4 md:px-6">
+    <div className="w-full py-12 md:py-24 lg:py-32 text-left mx-auto">
+      <div className="container flex items-start gap-8 px-4 md:px-6 mx-auto">
+        <div style={{ flex: 1 }}>
         <img
           alt="Sneaker Image"
-          className="aspect-[1/1] object-cover object-center"
-          height="500"
+          className="w-full h-auto max-w-[500px] max-h-[500px] aspect-[1/1] object-cover object-center"
           src="/placeholder.svg"
-          width="500"
         />
-        <div className="space-y-6">
-          <h1 className="text-4xl font-bold tracking-tighter">Project name</h1>
+        </div>
+        <div style={{ flex: 1 }}>
+        <div className="space-y-6 ">
+          <h1 className="text-4xl font-bold tracking-tighter ">Project name</h1>
           <div className="flex space-x-1">
           </div>
           <p className="text-2xl font-semibold text-zinc-900 dark:text-zinc-50">tech</p>
@@ -21,7 +22,7 @@ export default function Component() {
             details.
           </p>
         </div>
-        
+        </div>
       </div>
       <a href="/"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
             Home

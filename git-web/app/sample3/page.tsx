@@ -2,7 +2,8 @@
 import { Button } from "@/components/ui/button"
 export default function Component() {
     return (
-      <div key="1" className="w-full h-full flex flex-col min-w-[360px] max-w-[960px]">
+      <div key="1" className="w-full h-full flex flex-col min-w-[360px] max-w-[960px] mx-auto">
+        
         <header className="h-16 flex items-center justify-between px-4 border-b-2 border-gray-300">
             Project name
         </header>
