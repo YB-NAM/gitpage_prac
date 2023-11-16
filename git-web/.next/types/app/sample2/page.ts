@@ -1,4 +1,4 @@
-// File: /Users/yb/Desktop/git-page/gitpage_prac/git-web/app/sample2/page.tsx
+// File: C:\Users\YBIN\Desktop\git-web\gitpage_prac\git-web\app\sample2\page.tsx
 import * as entry from '../../../../app/sample2/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

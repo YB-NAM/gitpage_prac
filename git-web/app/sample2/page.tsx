@@ -6,8 +6,13 @@ import { Button } from "@/components/ui/button"
 import { CardContent, Card } from "@/components/ui/card"
 import React, { useEffect } from 'react';
 export default function Component() {
+  const handleDemoClick = () => {
+    //window.open('/myScene.html', '_blank');
+    console.log("!!!!!!!!!!!!!!!!!!!!!");
+  };
+
   return (
-    <div>
+    <div className="mx-auto">
       <Card
         key="1"
         className="rounded-lg overflow-hidden shadow-lg max-w-sm mx-auto hover:shadow-xl transition-all duration-200"
@@ -16,7 +21,7 @@ export default function Component() {
           alt="Profile picture"
           className="object-cover w-full"
           height="320"
-          src="/placeholder.svg"
+          src="/webgl.png"
           style={{
             aspectRatio: "320/320",
             objectFit: "cover",
@@ -30,15 +35,54 @@ export default function Component() {
             Detailsss.
           </p>
           <div className="flex mt-4 space-x-2">
-          <a href="/webgl-demo2"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
+            <a href="webgl-demo2"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm" >
               Play Demo
             </Button></a>
+
             <a href="/"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
               Home
             </Button></a>
           </div>
         </CardContent>
       </Card>
+
+      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black">
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="grid gap-6 items-center">
+            <div className="flex flex-col justify-center space-y-8 text-center">
+              <h2 className="text-2xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
+                What I did
+              </h2>
+              <div className="w-full max-w-full space-y-4 mx-auto">
+                <div className="grid grid-cols-3 gap-8">
+                  <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
+
+                    <h2 className="text-xl font-bold text-white">1.</h2>
+                    <p className="text-zinc-200 dark:text-zinc-100">
+                      ....
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
+                    <h2 className="text-xl font-bold text-white">2</h2>
+                    <p className="text-zinc-200 dark:text-zinc-100">
+                      ....
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
+                    <h2 className="text-xl font-bold text-white">3</h2>
+                    <p className="text-zinc-200 dark:text-zinc-100">
+                      ....
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
       <section className="w-full py-12 px-8 space-y-12" id="tag1">
         <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-200">Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -67,7 +111,7 @@ export default function Component() {
             <img
               alt="Project 2"
               className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
-              src="/web-372.png"
+              src="/webgl.png"
               style={{
                 aspectRatio: "200/200",
                 objectFit: "cover",
@@ -88,7 +132,7 @@ export default function Component() {
             <img
               alt="Project 3"
               className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
-              src="/web-372.png"
+              src="/unity1.png"
               style={{
                 aspectRatio: "200/200",
                 objectFit: "cover",
@@ -109,7 +153,7 @@ export default function Component() {
             <img
               alt="Project 4"
               className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
-              src="/web-372.png"
+              src="/robot.png"
               style={{
                 aspectRatio: "200/200",
                 objectFit: "cover",
