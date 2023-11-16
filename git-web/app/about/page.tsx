@@ -9,10 +9,10 @@ import { Button } from "@/components/ui/button"
 export default function Component() {
   return (
     <div className="flex justify-center items-center min-h-screen" style={{
-      backgroundImage: "linear-gradient(to right, #6a3093, #a044ff), url(/placeholder.svg?height=1080&width=1920)",
+      backgroundImage: "linear-gradient(to right, #a044ff ,#6a3093), url(/placeholder.svg?height=1080&width=1920)",
     }}>
       <Card className="shadow-lg w-[550px]" style={{
-          backgroundImage: "linear-gradient(to right, #ffff, #0000), url(/placeholder.svg?height=1080&width=1920)",
+          backgroundImage: "linear-gradient(to right,#aaaa ,#0000 ), url(/placeholder.svg?height=1080&width=1920)",
         }}>
         <CardContent className="p-6">
           <h2 className="text-2xl font-semibold">Hi, I am Yoobin Nam</h2>
