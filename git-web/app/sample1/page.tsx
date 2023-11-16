@@ -4,23 +4,26 @@ import { Button } from "@/components/ui/button"
 export default function Component() {
   return (
     <div className="w-full py-12 md:py-24 lg:py-32 text-left mx-auto">
+      <h1 className="text-4xl font-bold tracking-tighter">Project Summary</h1>
+      <br></br>
       <div className="container flex items-start gap-8 px-4 md:px-6 mx-auto">
         <div style={{ flex: 1 }}>
         <img
           alt="Sneaker Image"
           className="w-full h-auto max-w-[500px] max-h-[500px] aspect-[1/1] object-cover object-center"
-          src="/placeholder.svg"
+          src="/web-372.png"
         />
         </div>
         <div style={{ flex: 1 }}>
         <div className="space-y-6 ">
-          <h1 className="text-4xl font-bold tracking-tighter ">Project name</h1>
+          <h1 className="text-4xl font-bold tracking-tighter "> Planet Online Web </h1>
           <div className="flex space-x-1">
           </div>
-          <p className="text-2xl font-semibold text-zinc-900 dark:text-zinc-50">tech</p>
           <p className="text-base text-zinc-500 dark:text-zinc-400">
-            details.
+            Made community web site
           </p>
+          <p className="text-1xl font-semibold text-zinc-900 dark:text-zinc-50">Angular, Typescript, CSS, HTML, Apache, Postgresql, GCP(VM-Ubuntu)</p>
+          <p className="text-1xl font-semibold text-zinc-900 dark:text-zinc-50">....</p>
         </div>
         </div>
       </div>
@@ -34,13 +37,12 @@ export default function Component() {
           <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
             <img
               alt="Project 1"
-              height="200"
-              src="/placeholder.svg"
+              className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
+              src="/web-372.png"
               style={{
                 aspectRatio: "200/200",
                 objectFit: "cover",
               }}
-              width="200"
             />
             <div className="p-4">
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Full-stack webpage</h4>
@@ -56,13 +58,12 @@ export default function Component() {
           <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
             <img
               alt="Project 2"
-              height="200"
-              src="/placeholder.svg"
+              className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
+              src="/web-372.png"
               style={{
                 aspectRatio: "200/200",
                 objectFit: "cover",
               }}
-              width="200"
             />
             <div className="p-4">
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">WebGL (computer graphic)</h4>
@@ -78,13 +79,12 @@ export default function Component() {
           <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
             <img
               alt="Project 3"
-              height="200"
-              src="/placeholder.svg"
+              className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
+              src="/web-372.png"
               style={{
                 aspectRatio: "200/200",
                 objectFit: "cover",
               }}
-              width="200"
             />
             <div className="p-4">
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Unity 2d-games</h4>
@@ -100,13 +100,12 @@ export default function Component() {
           <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
             <img
               alt="Project 4"
-              height="200"
-              src="/placeholder.svg"
+              className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
+              src="/web-372.png"
               style={{
                 aspectRatio: "200/200",
                 objectFit: "cover",
               }}
-              width="200"
             />
             <div className="p-4">
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Problem solving</h4>
