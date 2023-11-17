@@ -23,7 +23,23 @@ export default function Component() {
               Made community web site
             </p>
             <p className="text-1xl font-semibold text-zinc-900 dark:text-zinc-50">Angular, Typescript, CSS, HTML, Apache, Postgresql, GCP(VM-Ubuntu)</p>
-            <p className="text-1xl font-semibold text-zinc-900 dark:text-zinc-50">....</p>
+            <p className="text-1xl font-semibold text-zinc-900 dark:text-zinc-50">
+              1. Register feature: Encrypt user's information with md5 hashing,
+              <br />
+              <span style={{ marginLeft: '20px' }}>checking the unique user id with our database</span>
+            </p>
+            <p className="text-1xl font-semibold text-zinc-900 dark:text-zinc-50">
+              2. Post Board: User can choose topic and create post, <br />
+              <span style={{ marginLeft: '20px' }}>other user can wirte comment under the post</span>
+            </p>
+            <p className="text-1xl font-semibold text-zinc-900 dark:text-zinc-50">
+              3. Chatting room: User can create chatting room with friend
+            </p>
+            <p className="text-1xl font-semibold text-zinc-900 dark:text-zinc-50">
+              4. Find nearest user: Using leafmap API 
+              <br />
+              <span style={{ marginLeft: '20px' }}>When user allow track their location, user can find nearest friend</span>
+            </p>
           </div>
         </div>
       </div>

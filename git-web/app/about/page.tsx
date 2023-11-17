@@ -12,9 +12,9 @@ export default function Component() {
       backgroundImage: "linear-gradient(to right, #a044ff ,#6a3093), url(/placeholder.svg?height=1080&width=1920)",
     }}>
       <Card className="shadow-lg w-[550px]" style={{
-          backgroundImage: "linear-gradient(to right,#aaaa ,#0000 ), url(/placeholder.svg?height=1080&width=1920)",
-        }}>
-        <CardContent className="p-6">
+        backgroundImage: "linear-gradient(to right,#aaaa ,#0000 ), url(/placeholder.svg?height=1080&width=1920)",
+      }}>
+        <CardContent className="p-6 text-white">
           <h2 className="text-2xl font-semibold">Hi, I am Yoobin Nam</h2>
           <Accordion className="w-full mt-4" type="multiple">
             <AccordionItem value="item-1">
@@ -73,7 +73,7 @@ export default function Component() {
             </AccordionItem>
           </Accordion>
           <Button
-            className="text-blue-500 border-blue-500 hover:bg-blue-500 hover:text-white dark:text-gray-300 dark:border-gray-300 dark:hover:bg-gray-300 dark:hover:text-black"
+            className="text-white border-white hover:bg-white hover:text-black dark:text-gray-300 dark:border-gray-300 dark:hover:bg-gray-300 dark:hover:text-black"
             variant="outline"
           >
             <a href="/">Home</a>

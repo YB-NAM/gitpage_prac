@@ -17,13 +17,14 @@ export default function Component() {
         <h2 className="text-2xl text-white mt-4 dark:text-gray-300">My projects</h2>
         <div className="flex mt-8 space-x-4">
           <Button
-            className="text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
-            variant="default"
+            className="text-white border-white hover:bg-gray-100 hover:text-black dark:text-gray-300 dark:border-gray-300 dark:hover:bg-gray-300 dark:hover:text-black"
+            variant="outline"
           >
             <a href="#tag1">View Projects</a>
           </Button>
+
           <Button
-            className="text-blue-500 border-blue-500 hover:bg-blue-500 hover:text-white dark:text-gray-300 dark:border-gray-300 dark:hover:bg-gray-300 dark:hover:text-black"
+            className="text-white border-white hover:bg-gray-100 hover:text-black dark:text-gray-300 dark:border-gray-300 dark:hover:bg-gray-300 dark:hover:text-black"
             variant="outline"
           >
             <a href="/about">About Me</a>
@@ -34,7 +35,7 @@ export default function Component() {
         <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-200">Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
-          <img
+            <img
               alt="Project 1"
               className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
               src="/web-372.png"
@@ -55,7 +56,7 @@ export default function Component() {
             </div>
           </div>
           <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
-          <img
+            <img
               alt="Project 1"
               className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
               src="/webgl.png"
@@ -76,7 +77,7 @@ export default function Component() {
             </div>
           </div>
           <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
-          <img
+            <img
               alt="Project 1"
               className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
               src="/unity1.png"
@@ -97,7 +98,7 @@ export default function Component() {
             </div>
           </div>
           <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
-          <img
+            <img
               alt="Project 1"
               className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
               src="/robot.png"
