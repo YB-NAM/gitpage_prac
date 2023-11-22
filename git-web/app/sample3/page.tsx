@@ -1,5 +1,8 @@
 
-import { Button } from "@/components/ui/button"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Button } from "@/components/ui/button";
 export default function Component() {
   return (
     <div key="1" className="w-full h-full flex flex-col min-w-[360px] max-w-[960px] mx-auto">
@@ -24,7 +27,6 @@ export default function Component() {
 
           </div>
           <p className="text-sm text-gray-500">
-
             <strong className="font-medium text-gray-600">Tech</strong> 1{" "}
             <strong className="font-medium text-gray-600">others</strong>
           </p>
@@ -90,7 +92,23 @@ export default function Component() {
           </div>
         </div>
       </section>
-
+      <div className="p-4 bg-gray-800">
+      <h2 className="text-2xl font-semibold mb-4 text-white">Encountered issues / Probleming Solving</h2>
+      <ul className="space-y-4">
+        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+          <h3 className="font-medium text-lg text-white">Issue 1</h3>
+          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 1.</p>
+        </li>
+        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+          <h3 className="font-medium text-lg text-white">Issue 2</h3>
+          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 2.</p>
+        </li>
+        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+          <h3 className="font-medium text-lg text-white">Issue 3</h3>
+          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 3.</p>
+        </li>
+      </ul>
+    </div>
 
 
       <section className="w-full py-12 px-8 space-y-12" id="tag1">
@@ -176,7 +194,7 @@ export default function Component() {
                 className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
-                Go to Project details
+                <a href="/sample4">Go to Project details</a>
               </Button>
             </div>
           </div>

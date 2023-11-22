@@ -21,7 +21,7 @@ const RollingGame: React.FC = () => {
     // Cleanup function
     return () => {
       // Access the current value of the ref
-      
+
       const renderer = rendererRef.current;
       // Check if the renderer is defined before accessing its properties
       if (renderer) {
@@ -119,18 +119,18 @@ const RollingGame: React.FC = () => {
     // Cast the geometries to CylinderGeometry
     const geometry1 = cylinder1.geometry as THREE.CylinderGeometry;
     const geometry2 = cylinder2.geometry as THREE.CylinderGeometry;
-  
+
     // Use the 'parameters' property for the radius
     const combinedRadius = geometry1.parameters.radiusTop + geometry2.parameters.radiusTop;
     const distance = cylinder1.position.distanceTo(cylinder2.position);
     return distance < combinedRadius;
   }
-  
+
   function getOverlapDistance(cylinder1: THREE.Mesh, cylinder2: THREE.Mesh) {
     // Cast the geometries to CylinderGeometry
     const geometry1 = cylinder1.geometry as THREE.CylinderGeometry;
     const geometry2 = cylinder2.geometry as THREE.CylinderGeometry;
-  
+
     // Use the 'parameters' property for the radius
     const combinedRadius = geometry1.parameters.radiusTop + geometry2.parameters.radiusTop;
     const distance = cylinder1.position.distanceTo(cylinder2.position);
@@ -176,20 +176,20 @@ const RollingGame: React.FC = () => {
       inputContainer.style.display = 'none';
     }
 
-  // Set up the scene
-  const myScene = new THREE.Scene();
+    // Set up the scene
+    const myScene = new THREE.Scene();
 
-  // Set up the camera
-  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-  camera.position.set(0, 40, 0);
-  camera.lookAt(0, 0, 0);
+    // Set up the camera
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.set(0, 40, 0);
+    camera.lookAt(0, 0, 0);
 
-  // Initialize renderer and assign it to the ref
-  rendererRef.current = new THREE.WebGLRenderer({ antialias: true });
-  const renderer = rendererRef.current;
+    // Initialize renderer and assign it to the ref
+    rendererRef.current = new THREE.WebGLRenderer({ antialias: true });
+    const renderer = rendererRef.current;
 
-  
-    renderer.setSize(window.innerWidth-50, window.innerHeight-50);
+
+    renderer.setSize(window.innerWidth - 50, window.innerHeight - 50);
     renderer.shadowMap.enabled = true;
     document.body.appendChild(renderer.domElement);
 
@@ -289,11 +289,11 @@ const RollingGame: React.FC = () => {
   return (
     <div className="wrapper">
       <a href="/"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
-              Home
-            </Button></a>
-            <a href="/sample2"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
-              Back
-            </Button></a>
+        Home
+      </Button></a>
+      <a href="/sample2"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
+        Back
+      </Button></a>
     </div>
   );
 };

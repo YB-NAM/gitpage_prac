@@ -1,9 +1,3 @@
 {
-  "/not-found": "app/not-found.js",
-  "/page": "app/page.js",
-  "/webgl-demo2/page": "app/webgl-demo2/page.js",
-  "/sample1/page": "app/sample1/page.js",
-  "/about/page": "app/about/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/sample3/page": "app/sample3/page.js"
+  "/about/page": "app/about/page.js"
 }

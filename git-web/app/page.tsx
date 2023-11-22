@@ -114,7 +114,7 @@ export default function Component() {
                 className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
-                Go to Project details
+                <a href="/sample4">Go to Project details</a>
               </Button>
             </div>
           </div>

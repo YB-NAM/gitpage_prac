@@ -12,10 +12,59 @@ export default function Component() {
   };
 
   return (
-    <div className="mx-auto">
+    <div className="flex flex-wrap justify-center mx-auto">
       <Card
         key="1"
-        className="rounded-lg overflow-hidden shadow-lg max-w-sm mx-auto hover:shadow-xl transition-all duration-200"
+        className="rounded-lg overflow-hidden shadow-lg max-w-sm mx-4 my-4 hover:shadow-xl transition-all duration-200"
+      >
+        <img
+          alt="Profile picture"
+          className="object-cover w-full"
+          height="320"
+          src="/webgl.png"
+          style={{
+            aspectRatio: "320/320",
+            objectFit: "cover",
+          }}
+          width="320"
+        />
+        <CardContent className="p-4">
+          <h2 className="text-2xl font-bold hover:text-gray-700 transition-all duration-200">Proejct name</h2>
+          <h3 className="text-gray-500 hover:text-gray-600 transition-all duration-200">Tech</h3>
+          <p className="mt-2 text-gray-600 hover:text-gray-700 transition-all duration-200">
+            Detailsss.
+          </p>
+        </CardContent>
+      </Card>
+
+      <Card
+        key="1"
+        className="rounded-lg overflow-hidden shadow-lg max-w-sm mx-4 my-4 hover:shadow-xl transition-all duration-200"
+      >
+        <img
+          alt="Profile picture"
+          className="object-cover w-full"
+          height="320"
+          src="/webgl.png"
+          style={{
+            aspectRatio: "320/320",
+            objectFit: "cover",
+          }}
+          width="320"
+        />
+        <CardContent className="p-4">
+          <h2 className="text-2xl font-bold hover:text-gray-700 transition-all duration-200">Proejct name</h2>
+          <h3 className="text-gray-500 hover:text-gray-600 transition-all duration-200">Tech</h3>
+          <p className="mt-2 text-gray-600 hover:text-gray-700 transition-all duration-200">
+            Detailsss.
+          </p>
+        </CardContent>
+      </Card>
+
+
+      <Card
+        key="1"
+        className="rounded-lg overflow-hidden shadow-lg max-w-sm mx-4 my-4 hover:shadow-xl transition-all duration-200"
       >
         <img
           alt="Profile picture"
@@ -38,13 +87,10 @@ export default function Component() {
             <a href="webgl-demo2"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm" >
               Play Demo
             </Button></a>
-
-            <a href="/"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
-              Home
-            </Button></a>
           </div>
         </CardContent>
       </Card>
+
 
       <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black">
         <div className="container px-4 md:px-6 mx-auto">
@@ -80,7 +126,26 @@ export default function Component() {
           </div>
         </div>
       </section>
-
+      <div className="p-4 bg-gray-800 w-full">
+      <h2 className="text-2xl font-semibold mb-4 text-white">Encountered issues / Probleming Solving</h2>
+      <ul className="space-y-4">
+        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+          <h3 className="font-medium text-lg text-white">Issue 1</h3>
+          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 1.</p>
+        </li>
+        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+          <h3 className="font-medium text-lg text-white">Issue 2</h3>
+          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 2.</p>
+        </li>
+        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+          <h3 className="font-medium text-lg text-white">Issue 3</h3>
+          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 3.</p>
+        </li>
+      </ul>
+    </div>
+      <a href="/" className="w-full"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
+        Home
+      </Button></a>
 
 
       <section className="w-full py-12 px-8 space-y-12" id="tag1">
@@ -166,7 +231,7 @@ export default function Component() {
                 className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
-                Go to Project details
+                <a href="/sample4">Go to Project details</a>
               </Button>
             </div>
           </div>

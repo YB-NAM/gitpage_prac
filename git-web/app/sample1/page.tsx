@@ -55,19 +55,19 @@ export default function Component() {
                 <div className="grid grid-cols-3 gap-8">
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
 
-                    <h2 className="text-xl font-bold text-white">1.</h2>
+                    <h2 className="text-xl font-bold text-white">1. Front-end with Angular</h2>
+                    <p className="text-zinc-200 dark:text-zinc-100">
+                    I designed the frontend of our website using Angular, with a key focus on enhancing user convenience.<br></br> I prioritized creating a user-friendly design to elevate the overall user experience.
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
+                    <h2 className="text-xl font-bold text-white">2. Database Setting</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
                       ....
                     </p>
                   </div>
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                    <h2 className="text-xl font-bold text-white">2</h2>
-                    <p className="text-zinc-200 dark:text-zinc-100">
-                      ....
-                    </p>
-                  </div>
-                  <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                    <h2 className="text-xl font-bold text-white">3</h2>
+                    <h2 className="text-xl font-bold text-white">3. Build Server</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
                       ....
                     </p>
@@ -79,6 +79,23 @@ export default function Component() {
           </div>
         </div>
       </section>
+      <div className="p-4 bg-gray-800">
+      <h2 className="text-2xl font-semibold mb-4 text-white">Encountered issues / Probleming Solving</h2>
+      <ul className="space-y-4">
+        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+          <h3 className="font-medium text-lg text-white">Issue 1</h3>
+          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 1.</p>
+        </li>
+        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+          <h3 className="font-medium text-lg text-white">Issue 2</h3>
+          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 2.</p>
+        </li>
+        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+          <h3 className="font-medium text-lg text-white">Issue 3</h3>
+          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 3.</p>
+        </li>
+      </ul>
+    </div>
       <a href="/"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
         Home
       </Button></a>
@@ -168,7 +185,7 @@ export default function Component() {
                 className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
-                Go to Project details
+                <a href="/sample4">Go to Project details</a>
               </Button>
             </div>
           </div>
