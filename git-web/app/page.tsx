@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 export default function Component() {
   return (
     <div key="1" className="w-full min-h-screen bg-gray-100 dark:bg-gray-900">
-      <section
+      <div
         className="w-full h-screen flex flex-col items-center justify-center bg-cover"
         style={{
           backgroundImage: "linear-gradient(to right, #6a3093, #a044ff), url(/placeholder.svg?height=1080&width=1920)",
@@ -30,7 +30,7 @@ export default function Component() {
             <a href="/about">About Me</a>
           </Button>
         </div>
-      </section>
+      </div>
       <section className="w-full py-12 px-8 space-y-12" id="tag1">
         <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-200">Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

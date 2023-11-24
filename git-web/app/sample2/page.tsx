@@ -103,19 +103,19 @@ export default function Component() {
                 <div className="grid grid-cols-3 gap-8">
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
 
-                    <h2 className="text-xl font-bold text-white">1.</h2>
+                    <h2 className="text-xl font-bold text-white">1. Creating 2-d pac-man game</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
                       ....
                     </p>
                   </div>
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                    <h2 className="text-xl font-bold text-white">2</h2>
+                    <h2 className="text-xl font-bold text-white">2. 3D object modeling</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
                       ....
                     </p>
                   </div>
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                    <h2 className="text-xl font-bold text-white">3</h2>
+                    <h2 className="text-xl font-bold text-white">3. Create 3D scene</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
                       ....
                     </p>

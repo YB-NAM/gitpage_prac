@@ -158,7 +158,7 @@ const RollingGame: React.FC = () => {
       rollRight = false;
       rotateAxis.set(-1, 0, 0);
     } else if (key === 'r') {
-      resetSpherePosition();
+      location.reload();
     } else if (key === 'q') {
       location.reload();
     }

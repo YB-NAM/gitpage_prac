@@ -63,13 +63,13 @@ export default function Component() {
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
                     <h2 className="text-xl font-bold text-white">2. Database Setting</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
-                      ....
+                    I have designed relational tables.<br></br> Using PostgreSQL, I verified the implementation and operation of tables locally. I then created a Docker image and efficiently deployed it on a server using Docker.
                     </p>
                   </div>
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
                     <h2 className="text-xl font-bold text-white">3. Build Server</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
-                      ....
+                    I implemented a server using a GCP (Ubuntu VM).<br></br> I set up a server using Express.js on localhost, and configured it to be accessible externally by utilizing Apache2.
                     </p>
                   </div>
 
@@ -83,16 +83,35 @@ export default function Component() {
       <h2 className="text-2xl font-semibold mb-4 text-white">Encountered issues / Probleming Solving</h2>
       <ul className="space-y-4">
         <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-          <h3 className="font-medium text-lg text-white">Issue 1</h3>
-          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 1.</p>
+          <h3 className="font-medium text-lg text-white">Database Table Issue</h3>
+          <p className="text-white mt-2">
+            When designing the database tables for a feature-rich website at the beginning, I had to consider numerous relationships to enable diverse functionalities.
+             As a result, during the initial testing with the created tables, I encountered issues such as conflicts between tables and difficulties in obtaining the desired output.
+             To address such issues, I started by drawing an ER diagram and sought advice from my professor during office hours. 
+             I also reached out to other senior students for guidance, initiating a collaborative effort to resolve the challenges I encountered.
+             In the end, I decided to recreate each table from scratch, a process that consumed a significant amount of time. However, it proved to be worthwhile as I eventually achieved the desired results.
+          </p>
         </li>
         <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-          <h3 className="font-medium text-lg text-white">Issue 2</h3>
-          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 2.</p>
+          <h3 className="font-medium text-lg text-white">Server Https Request</h3>
+          <p className="text-white mt-2">
+            I learned how to generate a personal HTTPS certificate during class, enabling temporary permission for HTTPS requests. 
+            However, my ultimate goal was to implement public HTTPS with universal access for anyone.
+            I reached out to other seniors for advice, but I couldn't find anyone who had practical experience in implementing public HTTPS. 
+            Additionally, online sources didn't align with the specific environment variables and codebase of our project, making it challenging to successfully implement the receipt of HTTPS requests.
+            However, I am determined to succeed in implementing this in either the ongoing project or future projects that I undertake.
+          </p>
         </li>
         <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-          <h3 className="font-medium text-lg text-white">Issue 3</h3>
-          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 3.</p>
+          <h3 className="font-medium text-lg text-white">API Connection</h3>
+          <p className="text-white mt-2">
+            As it was my first project involving the connection of an external API and a website, I encountered challenges during the initial integration. 
+            The map was not implemented as desired, and there were issues with displaying the desired locations and tags.
+            To address this issue, I had to modify the design of the frontend. 
+            Additionally, in the backend, I implemented a function to accurately store the specified locations from the map into the database and retrieve them only when needed. This solution resolved the problem.
+            An additional improvement method was to store a value in the user table indicating whether the user had granted real-time location sharing. 
+            This information could then be saved as a cookie, ensuring that the permission for real-time location sharing would not be queried every time the user logs in.
+          </p>
         </li>
       </ul>
     </div>
