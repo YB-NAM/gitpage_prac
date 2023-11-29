@@ -128,7 +128,7 @@ export default function Component() {
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Full-stack webpage</h4>
               <p className="text-gray-600 mt-2 dark:text-gray-400">Using Angular with Typescript, Apache server, Postgresql</p>
               <Button
-                className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                className="mt-4 text-white bg-purple-500 hover:bg-purple-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
                 <a href="/sample1">Go to Project details</a>
@@ -149,7 +149,7 @@ export default function Component() {
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">WebGL (computer graphic)</h4>
               <p className="text-gray-600 mt-2 dark:text-gray-400">Using Javascript, CSS, HTML with WebGL. Create 2d-pacman, dynamic 3d-objects</p>
               <Button
-                className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                className="mt-4 text-white bg-purple-500 hover:bg-purple-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
                 <a href="/sample2">Go to Project details</a>
@@ -170,7 +170,7 @@ export default function Component() {
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Unity 2d-games</h4>
               <p className="text-gray-600 mt-2 dark:text-gray-400">Using Unity with C#, made real world products.</p>
               <Button
-                className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                className="mt-4 text-white bg-purple-500 hover:bg-purple-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
                 <a href="/sample3">Go to Project details</a>
@@ -191,7 +191,7 @@ export default function Component() {
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Problem solving</h4>
               <p className="text-gray-600 mt-2 dark:text-gray-400">Using C, solve the tasks.</p>
               <Button
-                className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                className="mt-4 text-white bg-purple-500 hover:bg-purple-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
                 <a href="/sample4">Go to Project details</a>

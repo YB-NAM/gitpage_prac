@@ -17,10 +17,10 @@ export default function Component() {
       src="/robot.png"
     />
     <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-      Proin non odio sed nunc egestas fringilla at eu nulla. Vivamus in varius ex.
+      .....
     </p>
     <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-      Ut nec justo vel diam elementum facilisis at ac felis. Sed ut mauris a ligula egestas tincidunt.
+      .....
     </p>
   </div>
 </div>
