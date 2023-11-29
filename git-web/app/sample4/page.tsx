@@ -3,27 +3,39 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Button } from "@/components/ui/button";
+import React, { VideoHTMLAttributes } from 'react';
+
+interface CustomVideoProps extends VideoHTMLAttributes<HTMLVideoElement> {
+  playbackRate?: number;
+}
+
 export default function Component() {
+
+  const videoProps: CustomVideoProps = {
+    width: "640",
+    height: "360",
+    controls: true,
+    playbackRate: 1.5, // 원하는 playbackRate 값
+  };
   return (
     <div key="1" className="flex flex-col w-full h-full p-4 bg-white dark:bg-gray-800 rounded-md shadow-lg">
       <div className="flex flex-col items-center justify-center">
-  <div className="flex justify-between items-center mb-4 text-left w-full">
-    <h1 className="text-2xl font-bold text-gray-900 dark:text-white text-left">Information Display</h1>
-  </div>
-  <div className="flex-1 overflow-auto text-center w-full">
-    <img
-      alt="Sneaker Image"
-      className="w-full h-auto max-w-[500px] max-h-[500px] aspect-[1/1] object-cover object-center mb-4"
-      src="/robot.png"
-    />
-    <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-      .....
-    </p>
-    <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-      .....
-    </p>
-  </div>
-</div>
+        <div className="flex justify-between items-center mb-4 text-left w-full">
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white text-left">Problem Solving with Robot(C)</h1>
+        </div>
+        <div className="flex-1 overflow-auto text-center w-full">
+          <video {...videoProps}>
+            <source src="/maze.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+            .....
+          </p>
+          <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+            .....
+          </p>
+        </div>
+      </div>
 
       <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black">
         <div className="container px-4 md:px-6 mx-auto">
@@ -38,7 +50,7 @@ export default function Component() {
 
                     <h2 className="text-xl font-bold text-white">1.</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
-                    ....
+                      ....
                     </p>
                   </div>
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
@@ -61,22 +73,22 @@ export default function Component() {
         </div>
       </section>
       <div className="p-4 bg-gray-800">
-      <h2 className="text-2xl font-semibold mb-4 text-white">Encountered issues / Probleming Solving</h2>
-      <ul className="space-y-4">
-        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-          <h3 className="font-medium text-lg text-white">Issue 1</h3>
-          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 1.</p>
-        </li>
-        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-          <h3 className="font-medium text-lg text-white">Issue 2</h3>
-          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 2.</p>
-        </li>
-        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-          <h3 className="font-medium text-lg text-white">Issue 3</h3>
-          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 3.</p>
-        </li>
-      </ul>
-    </div>
+        <h2 className="text-2xl font-semibold mb-4 text-white">Encountered issues / Probleming Solving</h2>
+        <ul className="space-y-4">
+          <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+            <h3 className="font-medium text-lg text-white">Issue 1</h3>
+            <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 1.</p>
+          </li>
+          <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+            <h3 className="font-medium text-lg text-white">Issue 2</h3>
+            <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 2.</p>
+          </li>
+          <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+            <h3 className="font-medium text-lg text-white">Issue 3</h3>
+            <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 3.</p>
+          </li>
+        </ul>
+      </div>
       <a href="/"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm">
         Home
       </Button></a>
