@@ -1,9 +1,16 @@
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Button } from "@/components/ui/button";
+import React, { VideoHTMLAttributes } from 'react';
+
+interface CustomVideoProps extends VideoHTMLAttributes<HTMLVideoElement> {
+  playbackRate?: number;
+}
+
 export default function Component() {
+
+  const videoProps: CustomVideoProps = {
+    controls: true,
+    playbackRate: 1.0,
+  };
   return (
     <div key="1" className="w-full h-full flex flex-col min-w-[360px] max-w-[960px] mx-auto">
 
@@ -12,16 +19,25 @@ export default function Component() {
       </header>
       <main className="flex-grow overflow-y-auto">
         <div className="flex flex-col gap-4 p-4">
+          <div className="w-full h-64 rounded-md overflow-hidden border-2 border-gray-300 bg-gray-200 mx-auto flex items-center justify-center gap-4">
+            <video {...videoProps} className="max-w-full max-h-full object-cover object-center">
+              <source src="/unity1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video {...videoProps} className="max-w-full max-h-full object-cover object-center">
+              <source src="/unity3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video {...videoProps} className="max-w-full max-h-full object-cover object-center">
+              <source src="/unity4.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <div className="w-full h-64 rounded-md overflow-hidden border-2 border-gray-300 bg-gray-200 mx-auto flex items-center justify-center">
-            <img
-              alt="Project 2"
-              className="w-full h-auto max-w-[400px] max-h-[400px] aspect-[1/1] object-cover object-center"
-              src="/web-372.png"
-              style={{
-                aspectRatio: "200/200",
-                objectFit: "cover",
-              }}
-            />
+            <video {...videoProps} className="max-w-full max-h-full object-cover object-center">
+              <source src="/unity2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div className="flex items-center gap-2">
 
@@ -93,22 +109,22 @@ export default function Component() {
         </div>
       </section>
       <div className="p-4 bg-gray-800">
-      <h2 className="text-2xl font-semibold mb-4 text-white">Encountered issues / Probleming Solving</h2>
-      <ul className="space-y-4">
-        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-          <h3 className="font-medium text-lg text-white">Issue 1</h3>
-          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 1.</p>
-        </li>
-        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-          <h3 className="font-medium text-lg text-white">Issue 2</h3>
-          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 2.</p>
-        </li>
-        <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-          <h3 className="font-medium text-lg text-white">Issue 3</h3>
-          <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 3.</p>
-        </li>
-      </ul>
-    </div>
+        <h2 className="text-2xl font-semibold mb-4 text-white">Encountered issues / Probleming Solving</h2>
+        <ul className="space-y-4">
+          <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+            <h3 className="font-medium text-lg text-white">Issue 1</h3>
+            <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 1.</p>
+          </li>
+          <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+            <h3 className="font-medium text-lg text-white">Issue 2</h3>
+            <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 2.</p>
+          </li>
+          <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
+            <h3 className="font-medium text-lg text-white">Issue 3</h3>
+            <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 3.</p>
+          </li>
+        </ul>
+      </div>
 
 
       <section className="w-full py-12 px-8 space-y-12" id="tag1">

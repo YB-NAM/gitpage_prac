@@ -1,7 +1,4 @@
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Button } from "@/components/ui/button";
 import React, { VideoHTMLAttributes } from 'react';
 
@@ -15,23 +12,23 @@ export default function Component() {
     width: "640",
     height: "360",
     controls: true,
-    playbackRate: 1.5, // 원하는 playbackRate 값
+    playbackRate: 2.0, 
   };
   return (
     <div key="1" className="flex flex-col w-full h-full p-4 bg-white dark:bg-gray-800 rounded-md shadow-lg">
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center" style={{ backgroundColor: '#1a1a2e' }} >
         <div className="flex justify-between items-center mb-4 text-left w-full">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white text-left">Problem Solving with Robot(C)</h1>
+          <h1 className="text-2xl font-bold text-gray-900 text-white dark:text-white text-left">Problem Solving with Robot(C)</h1>
         </div>
         <div className="flex-1 overflow-auto text-center w-full">
           <video {...videoProps}>
             <source src="/maze.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-            .....
+          <p className="text-sm text-gray-600 text-white dark:text-gray-300 mb-4">
+            
           </p>
-          <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+          <p className="text-sm text-gray-600 text-white dark:text-gray-300 mb-4">
             .....
           </p>
         </div>
@@ -112,7 +109,7 @@ export default function Component() {
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Full-stack webpage</h4>
               <p className="text-gray-600 mt-2 dark:text-gray-400">Using Angular with Typescript, Apache server, Postgresql</p>
               <Button
-                className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                className="mt-4 text-white bg-purple-500 hover:bg-purple-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
                 <a href="/sample1">Go to Project details</a>
@@ -133,7 +130,7 @@ export default function Component() {
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">WebGL (computer graphic)</h4>
               <p className="text-gray-600 mt-2 dark:text-gray-400">Using Javascript, CSS, HTML with WebGL. Create 2d-pacman, dynamic 3d-objects</p>
               <Button
-                className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                className="mt-4 text-white bg-purple-500 hover:bg-purple-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
                 <a href="/sample2">Go to Project details</a>
@@ -154,7 +151,7 @@ export default function Component() {
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Unity 2d-games</h4>
               <p className="text-gray-600 mt-2 dark:text-gray-400">Using Unity with C#, made real world products.</p>
               <Button
-                className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                className="mt-4 text-white bg-purple-500 hover:bg-purple-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
                 <a href="/sample3">Go to Project details</a>
@@ -175,7 +172,7 @@ export default function Component() {
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Problem solving</h4>
               <p className="text-gray-600 mt-2 dark:text-gray-400">Using C, solve the tasks.</p>
               <Button
-                className="mt-4 text-white bg-blue-500 hover:bg-blue-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                className="mt-4 text-white bg-purple-500 hover:bg-purple-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                 variant="default"
               >
                 <a href="/sample4">Go to Project details</a>
