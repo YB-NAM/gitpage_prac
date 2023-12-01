@@ -84,21 +84,24 @@ export default function Component() {
                 <div className="grid grid-cols-3 gap-8">
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
 
-                    <h2 className="text-xl font-bold text-white">1.</h2>
+                    <h2 className="text-xl font-bold text-white">1.Build 2D-Game (Android apps) with Unity</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
-                      ....
+                      Clone coding the First game to understand pyshic logic in Unity.<br></br>
+                      Building apps from UI/UX design to backend.<br></br>
+                      Testing code with possible error cases and then finding error.
                     </p>
                   </div>
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                    <h2 className="text-xl font-bold text-white">2</h2>
+                    <h2 className="text-xl font-bold text-white">2. Add google advertisement with AdMob</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
-                      ....
+                      Android app easily connects to google, so add google play login/out features.<br></br>
+                      Moreover, added advertisement with AdMob. I have come to understand the concept of revenue systems generated through advertising.
                     </p>
                   </div>
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                    <h2 className="text-xl font-bold text-white">3</h2>
+                    <h2 className="text-xl font-bold text-white">3. Ranking system with Firebase</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
-                      ....
+                      ...
                     </p>
                   </div>
 
