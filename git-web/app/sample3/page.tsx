@@ -19,7 +19,7 @@ export default function Component() {
       </header>
       <main className="flex-grow overflow-y-auto">
         <div className="flex flex-col gap-4 p-4">
-          <div className="w-full h-64 rounded-md overflow-hidden border-2 border-gray-300 bg-gray-200 mx-auto flex items-center justify-center gap-4">
+          <div className="w-full h-96 rounded-md overflow-hidden border-2 border-gray-300 bg-gray-200 mx-auto flex items-center justify-center gap-4">
             <video {...videoProps} className="max-w-full max-h-full object-cover object-center">
               <source src="/unity1.mp4" type="video/mp4" />
               Your browser does not support the video tag.
