@@ -7,6 +7,10 @@ interface CustomVideoProps extends VideoHTMLAttributes<HTMLVideoElement> {
 
 export default function Component() {
 
+  const linkStyle = {
+    textDecoration: 'underline',
+  };
+
   const videoProps: CustomVideoProps = {
     controls: true,
     playbackRate: 1.0,
@@ -15,7 +19,7 @@ export default function Component() {
     <div key="1" className="w-full h-full flex flex-col min-w-[360px] max-w-[960px] mx-auto">
 
       <header className="h-16 flex items-center justify-between px-4 border-b-2 border-gray-300">
-        Project name
+        Unity Games
       </header>
       <main className="flex-grow overflow-y-auto">
         <div className="flex flex-col gap-4 p-4">
@@ -43,35 +47,29 @@ export default function Component() {
 
           </div>
           <p className="text-sm text-gray-500">
-            <strong className="font-medium text-gray-600">Tech</strong> 1{" "}
-            <strong className="font-medium text-gray-600">others</strong>
+            <strong className="font-medium text-gray-600">Tech : Unity(C#), GCP, AdMob, Firebase, Google Console, Play Store </strong>
           </p>
           <div className="flex items-center gap-2">
-            <strong className="font-medium text-gray-600">Details</strong>
-            <p className="text-sm text-gray-500">Great post!</p>
+            <strong className="font-medium text-gray-600">Details : {' '}
+            <strong className="font-medium text-gray-600">2D-games Google Play Store{' '}
+                <Button
+                  className="mt-4 text-white bg-gray-500 hover:bg-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  variant="default"
+                >
+                  <a
+                    href="https://play.google.com/store/apps/developer?id=Yoobin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Play Store
+                  </a>
+                </Button>
+            </strong>
+            </strong>
           </div>
         </div>
       </main>
-      <footer className="h-16 flex items-center justify-around px-4 border-t-2 border-gray-300">
-        <a href="/"><button className="focus:outline-none">
-          <svg
-            className=" h-6 w-6 text-gray-500 hover:text-gray-600 cursor-pointer"
-            fill="none"
-            height="24"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-            <polyline points="9 22 9 12 15 12 15 22" />
-          </svg>
-        </button>
-        </a>
-      </footer>
+      
 
       <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black">
         <div className="container px-4 md:px-6">
@@ -101,7 +99,8 @@ export default function Component() {
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
                     <h2 className="text-xl font-bold text-white">3. Ranking system with Firebase</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
-                      ...
+                      I managed user scores and login records by connecting the app with GCP, Firebase, and Google Console.<br></br>
+
                     </p>
                   </div>
 
@@ -128,7 +127,26 @@ export default function Component() {
           </li>
         </ul>
       </div>
-
+      <footer className="h-16 flex items-center justify-around px-4 border-t-2 border-gray-300">
+        <a href="/"><button className="focus:outline-none">
+          <svg
+            className=" h-6 w-6 text-gray-500 hover:text-gray-600 cursor-pointer"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+        </button>
+        </a>
+      </footer>
 
       <section className="w-full py-12 px-8 space-y-12" id="tag1">
         <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-200">Projects</h3>

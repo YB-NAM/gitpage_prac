@@ -1,4 +1,8 @@
 {
+  "/not-found": "app/not-found.js",
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js",
   "/sample3/page": "app/sample3/page.js",
+  "/sample4/page": "app/sample4/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

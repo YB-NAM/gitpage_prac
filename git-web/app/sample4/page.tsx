@@ -18,7 +18,7 @@ export default function Component() {
     <div key="1" className="flex flex-col w-full h-full p-4 bg-white dark:bg-gray-800 rounded-md shadow-lg">
       <div className="flex flex-col items-center justify-center" style={{ backgroundColor: '#1a1a2e' }} >
         <div className="flex justify-between items-center mb-4 text-left w-full">
-          <h1 className="text-2xl font-bold text-gray-900 text-white dark:text-white text-left">Problem Solving with Robot(C)</h1>
+          <h1 className="text-2xl font-bold text-gray-900 text-white dark:text-white text-left"> - Problem Solving with Robot(C)</h1>
         </div>
         <div className="flex-1 overflow-auto text-center w-full">
           <video {...videoProps}>
