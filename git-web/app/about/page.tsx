@@ -59,10 +59,12 @@ export default function Component() {
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger className="hover:underline-none">
-                  4
+                  4. Links
                 </AccordionTrigger>
                 <AccordionContent>
-                  ...
+                  <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    Open Resume PDF
+                  </a>
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem className="border-b-0" value="item-5">

@@ -18,7 +18,7 @@ export default function Component() {
     <div key="1" className="flex flex-col w-full h-full p-4 bg-white dark:bg-gray-800 rounded-md shadow-lg">
       <div className="flex flex-col items-center justify-center" style={{ backgroundColor: '#1a1a2e' }} >
         <div className="flex justify-between items-center mb-4 text-left w-full">
-          <h1 className="text-2xl font-bold text-gray-900 text-white dark:text-white text-left"> - Problem Solving with Robot(C)</h1>
+          <h1 className="text-2xl font-bold text-gray-900 text-white dark:text-white text-left"> - Problem Solving with ROBOTC(C)</h1>
         </div>
         <div className="flex-1 overflow-auto text-center w-full">
           <video {...videoProps}>
@@ -29,7 +29,7 @@ export default function Component() {
             
           </p>
           <p className="text-sm text-gray-600 text-white dark:text-gray-300 mb-4">
-            .....
+            Using C to solve the given task by moving ROBOTC (Bar code scanners, Distinguish Colors with Sensor value, and Maze Solving)
           </p>
         </div>
       </div>
@@ -45,21 +45,26 @@ export default function Component() {
                 <div className="grid grid-cols-3 gap-8">
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
 
-                    <h2 className="text-xl font-bold text-white">1.</h2>
+                    <h2 className="text-xl font-bold text-white">1. Team leader</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
-                      ....
+                      As a team leader: When given a task , the best scenario was organized and provided by coordinating the ideas of the group members from the creation of ideas
+                      <br></br>
+                      After assessing the capabilities of each group member, optimal roles were assigned to them accordingly.
                     </p>
                   </div>
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                    <h2 className="text-xl font-bold text-white">2.</h2>
+                    <h2 className="text-xl font-bold text-white">2. Main Programmer</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
-                      ....
+                      I wrote most of the code to solve the challenge using the C programming language.<br></br>
+                      Since the group members were new to using the C language, I conducted code reviews after writing and merging their code, explaining how our group's code operated and how variables were controlled.
                     </p>
                   </div>
                   <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                    <h2 className="text-xl font-bold text-white">3.</h2>
+                    <h2 className="text-xl font-bold text-white">3. Code tester</h2>
                     <p className="text-zinc-200 dark:text-zinc-100">
-                      ....
+                      The error that may occur during the process of merging codes with group members was identified in advance to prevent issues that may arise when the actual robot operates.
+                      <br></br>
+                      The operation of virtual robots and actual physical robots differed due to various environmental variables, but this was modified to function identically by writing various test codes.
                     </p>
                   </div>
 
@@ -73,16 +78,15 @@ export default function Component() {
         <h2 className="text-2xl font-semibold mb-4 text-white">Encountered issues / Probleming Solving</h2>
         <ul className="space-y-4">
           <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-            <h3 className="font-medium text-lg text-white">Issue 1</h3>
-            <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 1.</p>
+            <h3 className="font-medium text-lg text-white">Environmental Variables</h3>
+            <p className="text-white mt-2">For the virtual robot, there was no need to consider additional variables as the shadows and light sources remained consistent. 
+            However, for the actual robot, variables such as the robot's shadow, people's shadows, light coming from multiple directions, and the unevenness and stains on the classroom floor had to be considered.
+              <br></br>To address these variables, various test codes were written and executed, and by using optimal median values, all challenges were successfully completed.
+            </p>
           </li>
           <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-            <h3 className="font-medium text-lg text-white">Issue 2</h3>
-            <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 2.</p>
-          </li>
-          <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-            <h3 className="font-medium text-lg text-white">Issue 3</h3>
-            <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 3.</p>
+            <h3 className="font-medium text-lg text-white">Code Optimization</h3>
+            <p className="text-white mt-2">Due to the limited capacity for operation within the robot, there was a need to optimize the code. Through code reviews and testing, unnecessary parts were removed and code optimization was conducted to minimize the file size.</p>
           </li>
         </ul>
       </div>

@@ -12,7 +12,7 @@ export default function Component() {
   };
 
   return (
-    <div className="flex flex-wrap justify-center mx-auto">
+    <div className="flex flex-wrap justify-center mx-auto" >
       <Card
         key="1"
         className="rounded-lg overflow-hidden shadow-lg max-w-sm mx-4 my-4 hover:shadow-xl transition-all duration-200"

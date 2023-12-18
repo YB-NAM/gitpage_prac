@@ -115,15 +115,21 @@ export default function Component() {
         <ul className="space-y-4">
           <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
             <h3 className="font-medium text-lg text-white">Publishing Process</h3>
-            <p className="text-white mt-2">.</p>
+            <p className="text-white mt-2">From building the Android app using Unity to creating the conditions required to put the actual app on the store, it took a lot of time.
+              I spent time studying new things by having to use new tools such as Google Cloud Platform, Google Play Console, AdMob, and Firebase system.
+              <br></br>But in conclusion, it was an experience that allowed me to publish apps into the real world.
+            </p>
           </li>
           <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
             <h3 className="font-medium text-lg text-white">Setting Permission (Authority) Keys</h3>
-            <p className="text-white mt-2">.</p>
+            <p className="text-white mt-2">By having to connect various tools, it was essential to match the keys occurring in each tool. 
+              <br></br> Errors that occurred because keys did not matched: no advertisement, no score was saved in the ranking system, and an error occurred in the process of releasing the abb package in the Google Play Console.
+              </p>
           </li>
           <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
             <h3 className="font-medium text-lg text-white">Updating APP Requirment</h3>
-            <p className="text-white mt-2">.</p>
+            <p className="text-white mt-2">It does not end with a single release, but the required API version or Abb package configuration changes according to the update of the Google Store.
+              As a result, there is a problem that all apps cannot be updated according to requirements.</p>
           </li>
         </ul>
       </div>
