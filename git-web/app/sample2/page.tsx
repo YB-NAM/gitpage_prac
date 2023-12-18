@@ -81,6 +81,9 @@ export default function Component() {
             Create 3D-objects wit light source and shadow.
           </p>
           <div className="flex mt-4 space-x-2">
+            <p className="mt-2 text-gray-600 hover:text-gray-700 transition-all duration-200">
+              Using arrow keys to move a ball.
+            </p>
             <a href="webgl-demo2"><Button className="w-full hover:bg-gray-700 hover:text-white transition-all duration-200" size="sm" >
               Play Demo
             </Button></a>

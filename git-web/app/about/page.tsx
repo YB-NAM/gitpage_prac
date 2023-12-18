@@ -25,7 +25,7 @@ export default function Component() {
                   1. Skills
                 </AccordionTrigger>
                 <AccordionContent>
-                  Language - C++, C, C#, Python, Java, Javascript, Typescript, html, CSS<br></br><br></br>
+                  Language - C++, C, C#, Python, Java, Javascript, Typescript, HTML, CSS<br></br><br></br>
                   Framework - Angular, Nextjs<br></br><br></br>
                   Library - Jquery, React<br></br><br></br>
                   Operating Systems - Microsoft Window, Linux, Mac<br></br><br></br>

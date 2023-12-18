@@ -16,13 +16,13 @@ export default function Component() {
     playbackRate: 1.0,
   };
   return (
-    <div key="1" className="w-full h-full flex flex-col min-w-[360px] max-w-[960px] mx-auto">
+    <div key="1" className="w-full h-full flex flex-col min-w-[360px] max-w-[960px] mx-auto " >
 
-      <header className="h-16 flex items-center justify-between px-4 border-b-2 border-gray-300">
+      <header className="h-16 flex items-center justify-between px-4 border-b-2 border-gray-300 text-white dark:text-white" style={{ backgroundColor: '#1a1a2e' }}>
         Unity Games
       </header>
-      <main className="flex-grow overflow-y-auto">
-        <div className="flex flex-col gap-4 p-4">
+      <main className="flex-grow overflow-y-auto" style={{ backgroundColor: '#1a1a2e' }}>
+        <div className="flex flex-col gap-4 p-4 ">
           <div className="w-full h-96 rounded-md overflow-hidden border-2 border-gray-300 bg-gray-200 mx-auto flex items-center justify-center gap-4">
             <video {...videoProps} className="max-w-full max-h-full object-cover object-center">
               <source src="/unity1.mp4" type="video/mp4" />
@@ -47,11 +47,11 @@ export default function Component() {
 
           </div>
           <p className="text-sm text-gray-500">
-            <strong className="font-medium text-gray-600">Tech : Unity(C#), GCP, AdMob, Firebase, Google Console, Play Store </strong>
+            <strong className="font-medium text-gray-600 text-white dark:text-white">Tech : Unity(C#), Google Cloud Platform(GCP), Google Play Console, AdMob, Firebase, Play Store </strong>
           </p>
           <div className="flex items-center gap-2">
-            <strong className="font-medium text-gray-600">Details : {' '}
-            <strong className="font-medium text-gray-600">2D-games Google Play Store{' '}
+            <strong className="font-medium text-gray-600 text-white dark:text-white">Details : {' '}
+              <strong className="font-medium text-gray-600 text-white dark:text-white">2D-games Google Play Store{' '}
                 <Button
                   className="mt-4 text-white bg-gray-500 hover:bg-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700"
                   variant="default"
@@ -114,16 +114,16 @@ export default function Component() {
         <h2 className="text-2xl font-semibold mb-4 text-white">Encountered issues / Probleming Solving</h2>
         <ul className="space-y-4">
           <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-            <h3 className="font-medium text-lg text-white">Issue 1</h3>
-            <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 1.</p>
+            <h3 className="font-medium text-lg text-white">Publishing Process</h3>
+            <p className="text-white mt-2">.</p>
           </li>
           <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-            <h3 className="font-medium text-lg text-white">Issue 2</h3>
-            <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 2.</p>
+            <h3 className="font-medium text-lg text-white">Setting Permission (Authority) Keys</h3>
+            <p className="text-white mt-2">.</p>
           </li>
           <li className="p-4 rounded-md border border-gray-600 shadow-sm bg-gray-900">
-            <h3 className="font-medium text-lg text-white">Issue 3</h3>
-            <p className="text-white mt-2">This is a detailed explanation about how I solved Issue 3.</p>
+            <h3 className="font-medium text-lg text-white">Updating APP Requirment</h3>
+            <p className="text-white mt-2">.</p>
           </li>
         </ul>
       </div>
