@@ -1,1 +1,0 @@
-@keyframes bouncingAnimation{0%,to{transform:translateY(-100%)}50%{transform:translateY(100%)}}.bouncing-container{animation:bouncingAnimation 3s linear infinite}

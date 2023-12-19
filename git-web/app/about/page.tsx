@@ -49,27 +49,23 @@ export default function Component() {
                   Material Engineering
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger className="hover:underline-none">
-                  3.
-                </AccordionTrigger>
-                <AccordionContent>
-                  ...
-                </AccordionContent>
-              </AccordionItem>
+              
               <AccordionItem value="item-4">
                 <AccordionTrigger className="hover:underline-none">
-                  4. Links
+                  3. Links
                 </AccordionTrigger>
                 <AccordionContent>
                   <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
                     Open Resume PDF
                   </a>
+                  <a href="https://github.com/YB-NAM" target="_blank" rel="noopener noreferrer">
+                    Git-Hub
+                  </a>
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem className="border-b-0" value="item-5">
                 <AccordionTrigger className="hover:underline-none">
-                  5. Contact Info.
+                  4. Contact Info.
                 </AccordionTrigger>
                 <AccordionContent>
                   School email: yoobin_nam@sfu.ca<br></br>
