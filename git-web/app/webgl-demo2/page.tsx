@@ -139,7 +139,7 @@ const RollingGame: React.FC = () => {
 
   let rotateAxis = new THREE.Vector3();
 
-  function onKeyDown(event: React.KeyboardEvent) {
+  function onKeyDown(event: KeyboardEvent) {
     const key = event.key.toLowerCase();
     if (key === 'arrowleft') {
       rollFar = false;
@@ -234,9 +234,10 @@ const RollingGame: React.FC = () => {
     createCylinders(myScene);
     createCones(myScene);
 
+    
     document.addEventListener("keydown", onKeyDown);
     const rotationSpeed = 0.03;
-
+    
     function animate() {
       requestAnimationFrame(animate);
 

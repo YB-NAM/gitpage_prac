@@ -44,7 +44,7 @@ export default function Component() {
                 objectFit: "cover",
               }}
             />
-            <div className="p-4">
+            <div className="p-1">
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Full-stack webpage</h4>
               <p className="text-gray-600 mt-2 dark:text-gray-400">Using Angular with Typescript, Apache server, Postgresql</p>
               <Button
@@ -57,7 +57,7 @@ export default function Component() {
           </div>
           <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
             <img
-              alt="Project 1"
+              alt="Project 2"
               className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
               src="/webgl.png"
               style={{
@@ -65,7 +65,7 @@ export default function Component() {
                 objectFit: "cover",
               }}
             />
-            <div className="p-4">
+            <div className="p-2">
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">WebGL (computer graphic)</h4>
               <p className="text-gray-600 mt-2 dark:text-gray-400">Using Javascript, CSS, HTML with WebGL. Create 2d-pacman, dynamic 3d-objects</p>
               <Button
@@ -78,7 +78,7 @@ export default function Component() {
           </div>
           <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
             <img
-              alt="Project 1"
+              alt="Project 3"
               className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
               src="/unity1.png"
               style={{
@@ -86,7 +86,7 @@ export default function Component() {
                 objectFit: "cover",
               }}
             />
-            <div className="p-4">
+            <div className="p-3">
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Unity 2d-games</h4>
               <p className="text-gray-600 mt-2 dark:text-gray-400">Using Unity with C#, made real world products.</p>
               <Button
@@ -99,7 +99,7 @@ export default function Component() {
           </div>
           <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
             <img
-              alt="Project 1"
+              alt="Project 4"
               className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
               src="/robot.png"
               style={{
@@ -115,6 +115,27 @@ export default function Component() {
                 variant="default"
               >
                 <a href="/sample4">Go to Project details</a>
+              </Button>
+            </div>
+          </div>
+          <div className="w-full bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img
+              alt="Project 5"
+              className="w-full h-auto max-w-[200px] max-h-[200px] aspect-[1/1] object-cover object-center"
+              src="/276.png"
+              style={{
+                aspectRatio: "200/200",
+                objectFit: "cover",
+              }}
+            />
+            <div className="p-5">
+              <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Java 2d-Game</h4>
+              <p className="text-gray-600 mt-2 dark:text-gray-400">Using Java, 2d-maze game.</p>
+              <Button
+                className="mt-4 text-white bg-purple-500 hover:bg-purple-600 dark:bg-gray-800 dark:hover:bg-gray-700"
+                variant="default"
+              >
+                <a href="/sample5">Go to Project details</a>
               </Button>
             </div>
           </div>
