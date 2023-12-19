@@ -58,6 +58,7 @@ export default function Component() {
                   <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
                     Open Resume PDF
                   </a>
+                  <br></br>
                   <a href="https://github.com/YB-NAM" target="_blank" rel="noopener noreferrer">
                     Git-Hub
                   </a>
