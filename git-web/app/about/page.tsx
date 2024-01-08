@@ -45,7 +45,7 @@ export default function Component() {
                   Computer Science<br></br><br></br>
 
 
-                  Soongsing University in Korea (2016. Spring ~ 2018. Fall)<br></br>
+                  Soongsil University in Korea (2016. Spring ~ 2018. Fall)<br></br>
                   Material Engineering
                 </AccordionContent>
               </AccordionItem>
